@@ -1,6 +1,6 @@
 <div class="my-3">
   <h5 [ngClass]="{ strike: !todo.active }">{{ todo.title }}</h5>
-  <p [ngClass]="{ strike: !todo.active }">{{ todo.desc }}</p>
+  <p [ngClass]="{ strike: !todo.active }" class="mb-0">{{ todo.desc }}</p>
   <div class="form-group form-check">
     <input
       type="checkbox"

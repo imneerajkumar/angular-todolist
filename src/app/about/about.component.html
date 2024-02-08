@@ -15,5 +15,11 @@
       quidem ipsam, assumenda sunt atque ad aliquid.
     </p>
     <a class="btn btn-primary btn-lg" routerLink="/">Try It</a>
+    <button class="btn btn-primary btn-lg" (click)="postUser()">
+      Post User
+    </button>
+  </div>
+  <div class="posts" *ngFor="let user of users">
+    <h4>{{ user.name }}</h4>
   </div>
 </div>
